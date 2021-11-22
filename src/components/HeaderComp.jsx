@@ -22,5 +22,5 @@ const HeaderComp = () => {
 export default HeaderComp;
 
 const Header = styled.header`
-	background-color: red;
+	/* background-color: red; */
 `;
