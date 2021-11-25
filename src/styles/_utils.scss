@@ -1,0 +1,142 @@
+.m-1 {
+  margin: 0.5rem;
+}
+.m-2 {
+  margin: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.ms-1 {
+  margin-left: 0.5rem;
+}
+.ms-2 {
+  margin-left: 1rem;
+}
+
+.me-1 {
+  margin-right: 0.5rem;
+}
+.me-2 {
+  margin-right: 1rem;
+}
+
+.my-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.mx-1 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.my-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mx-2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.pt-1 {
+  padding-top: 0.5rem;
+}
+
+.pt-2 {
+  padding-top: 1rem;
+}
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 1rem;
+}
+
+.ps-1 {
+  padding-left: 0.5rem;
+}
+
+.ps-2 {
+  padding-left: 1rem;
+}
+
+.pe-1 {
+  padding-right: 0.5rem;
+}
+
+.pe-2 {
+  padding-right: 1rem;
+}
+
+/* // text utilities */
+
+.text-start {
+  text-align: left;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fst-italic {
+  font-style: italic;
+}
+
+/* // color utitilities */
+.text-primary {
+  color: $primary;
+}
+.text-dark {
+  color: $darkgray;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+.bg-dark {
+  background-color: $darkgray;
+}
+
+.text-light {
+  color: $light;
+}
+
+/* // Layout class */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
