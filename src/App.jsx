@@ -5,12 +5,14 @@ import HomePage from "./pages";
 import AboutPage from "./pages/about";
 import "./styles/index.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
+import HeroComp from "./components/HeroComp";
 
 const App = () => {
   return (
     <Router>
       <div>
         <HeaderComp />
+        <HeroComp />
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/about" component={AboutPage} />

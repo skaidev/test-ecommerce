@@ -159,7 +159,7 @@ const Header = styled.header`
           }
         }
         .second {
-          border: 3px;
+          border: none;
 
           border-radius: 5px;
           button,
