@@ -12,12 +12,12 @@ const HeaderComp = () => {
               <a href="/" className="d-flex align-items-center me-2">
                 <li className="btn">
                   <img src="images/download 1.svg" alt="" />
-                  English<i className="fas fa-chevron-down ms-1"></i>
+                  English<i className="fas fa-chevron-down mx-1"></i>
                 </li>
               </a>
               <a href="/" className="d-flex align-items-center">
                 <li className="btn">
-                  Currency USD<i className="fas ms-1 fa-chevron-down"></i>
+                  Currency USD<i className="fas mx-2 fa-chevron-down"></i>
                 </li>
               </a>
             </div>
@@ -52,11 +52,11 @@ const HeaderComp = () => {
       </div>
       <div className="bottom-nav">
         <div className="container d-flex">
-          <div className="img">
+          <div className="mx-1">
             <img src="images/Ububa logo for ui-02 1 (1).svg" alt="" />
             <img src="images/Group (1).svg" alt="" />
           </div>
-          <div className="col-auto input">
+          <div className="col-auto input mx-5 mt-4">
             <label className="visually-hidden" for="InputGroup">
               search products, categories
             </label>
@@ -75,20 +75,21 @@ const HeaderComp = () => {
             </div>
           </div>
 
-          <div className="nav-content">
-            <ul className="nav-item d-flex">
+          <div className="nav-content mx-5 mt-3">
+            <ul className="nav-item d-flex ">
               <a href="/" className="nav-link">
-                <i className="far fa-heart"></i>
+                <i className="far fa-heart fs-29"></i>
               </a>
               <a href="/" className="nav-link">
-                <i className="fas fa-shopping-bag"></i>
+                <i className="fas fa-shopping-bag fs-29"></i>
               </a>
-              <a href="/" className="nav-link check">
-                <i className="far fa-question-circle question"></i>
+
+              <a href="/" className="nav-link text-danger mx-3 ">
+                <i className="far fa-question-circle question fs-29"></i>
               </a>
-              <a href="/" className="nav-link">
+              <a href="/" className="nav-link ">
                 {" "}
-                <i className="far fa-user-circle profile"></i>
+                <i className="far fa-user-circle profile fs-29"></i>
               </a>
             </ul>
           </div>
@@ -140,7 +141,7 @@ const Header = styled.header`
   // the top nav end
   // starting of the bottom nav
   .bottom-nav {
-    justify-content: space-around;
+    justify-content: space-between;
     .input {
       margin-right: 8rem;
 
@@ -158,7 +159,7 @@ const Header = styled.header`
           }
         }
         .second {
-          border: none;
+          border: 3px;
 
           border-radius: 5px;
           button,
@@ -171,12 +172,6 @@ const Header = styled.header`
     .nav-content {
       .nav-link {
         color: black;
-        font-size: 14px !important;
-        font-weight: bold !important;
-
-        .check {
-          color: red !important;
-        }
       }
     }
   }
