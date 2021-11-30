@@ -8,43 +8,76 @@ const HeaderComp = () => {
       <div className="top-nav bg-primary">
         <div className=" container d-flex align-items-lg-center justify-content-md-between">
           <div className="left d-flex align-items-md-center flex-column flex-md-row">
-            <div className="d-flex">
-              <a href="/" className="d-flex align-items-center me-2">
-                <li className="btn">
-                  <img src="images/download 1.svg" alt="" />
-                  English<i className="fas fa-chevron-down mx-1"></i>
-                </li>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle" href="/#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/download 1.svg" alt="" /> English
               </a>
-              <a href="/" className="d-flex align-items-center">
-                <li className="btn">
-                  Currency USD<i className="fas mx-2 fa-chevron-down"></i>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="/">
+                    Arabic
+                  </a>
                 </li>
+                <li>
+                  <a class="dropdown-item" href="/">
+                    spanish
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">
+                    Euro
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle" href="/#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Currency:USD
               </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="/">
+                    Naira
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">
+                    dollar
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">
+                    pounds
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="icons d-flex">
               <a href="/">
-                <i class="fab fa-facebook text-dark"></i>
+                <i class="fab fa-facebook text-info"></i>
               </a>
               <a href="/">
-                <i className="fab fa-twitter text-dark"></i>
+                <i className="fab fa-twitter text-info"></i>
               </a>
               <a href="/">
-                <i className="fab fa-linkedin-in text-dark"></i>
+                <i className="fab fa-linkedin-in text-info"></i>
               </a>
               <a href="/">
-                <i className="fab fa-instagram text-dark"></i>
+                <i className="fab fa-instagram text-info"></i>
               </a>
             </div>
             <li className="p-0 m-0 d-md-flex d-none align-items-center phone ">
-              <i className="fas fa-phone-alt me-3"></i>
-              <p className="fw-bold gold">+234 901 262 4162</p>
+              <i className="fas fa-phone-alt me-3 text-info"></i>
+              <p className="gold fw-regular ">+234 901 262 4162</p>
             </li>
           </div>
-          <div className="d-flex left ">
-            <a href="/" className="text-secondary fw-bold">
+          <div className="p-0 d-flex m-0">
+            <a href="/" className="text-secondary fw-bold2 me-2">
               About Us
             </a>
-            <a href="/" className="text-info fw-bold">
+            <a href="/" className="text-info fw-bold mx-4">
               Contact Us
             </a>
           </div>
@@ -52,49 +85,95 @@ const HeaderComp = () => {
       </div>
       <div className="bottom-nav">
         <div className="container d-flex">
-          <div className="mx-1">
+          <div className=" d-flex">
             <img src="images/Ububa logo for ui-02 1 (1).svg" alt="" />
             <img src="images/Group (1).svg" alt="" />
           </div>
-          <div className="col-auto input mx-5 mt-4">
-            <label className="visually-hidden" for="InputGroup">
-              search products, categories
-            </label>
-            <div className="input-group">
-              <div className="input-group-text first">
-                <span className="btn">
-                  All Categories <i className="fas fa-chevron-down text-secondary"></i>
-                </span>
+          <div className="mx-3 pt-4">
+            <div className="container d-flex">
+              <div className="dropdown">
+                <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  All Categories
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a className="dropdown-item" href="/">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <input type="text" className="form-control" id="InputGroup" placeholder="search products, categories" />
-              <div className="input-group-text second bg-secondary">
-                <span className=" text=light">
-                  <i className="fas fa-search"></i>
-                </span>
+              <div className="input-group mx-5 mt-2">
+                <input type="text" className=" form-control" placeholder="search products, categories" />
+                <div className="input-group-text bg-secondary">
+                  <span className="">
+                    <i className="fas fa-search text-light fs-14"></i>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="nav-content mx-5 mt-3">
-            <ul className="nav-item d-flex ">
-              <a href="/" className="nav-link">
-                <i className="far fa-heart fs-29"></i>
-              </a>
-              <a href="/" className="nav-link">
-                <i className="fas fa-shopping-bag fs-29"></i>
-              </a>
+          {/* <div className="inputGroup">
+            <div className="inputGroup1"></div>
 
-              <a href="/" className="nav-link text-danger mx-3 ">
-                <i className="far fa-question-circle question fs-29"></i>
-              </a>
-              <a href="/" className="nav-link ">
-                {" "}
-                <i className="far fa-user-circle profile fs-29"></i>
-              </a>
+            <label For="input">
+              {" "}
+              <span className="">
+                All Categories <i className="fas fa-chevron-down text-secondary"></i>
+              </span>
+            </label>
+            <input type="text" className="inputGroup" placeholder="search products, categories" />
+            <div className="input">
+              <span className=" text=light">
+                <i className="fas fa-search text-light"></i>
+              </span>
+            </div>
+          </div> */}
+
+          <div className="nav-content pt-4 ">
+            <ul className="nav-item d-flex ">
+              <li>
+                <a href="/" className="nav-link">
+                  <i className="far fa-heart fs-21"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/" className="nav-link">
+                  <i className="fas fa-shopping-bag fs-21"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/" className="nav-link text-danger mx-3 ">
+                  <i className="far fa-question-circle question fs-21"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/" className="nav-link ">
+                  {" "}
+                  <i className="far fa-user-circle profile fs-21"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+
+      {/* <div className="input-group-text ">
+                <span className="">
+                  All Categories <i className="fas fa-chevron-down text-secondary"></i>
+                </span>
+              </div> */}
       {/* <nav>
         <ul>
           <li>
@@ -112,12 +191,13 @@ const HeaderComp = () => {
 export default HeaderComp;
 
 const Header = styled.header`
+  input[type="text"] {
+    padding-right: 8rem;
+  }
   .top-nav {
     font-size: 14px;
 
     .left {
-      justify-content: space-around;
-
       a {
         margin-right: 10px;
         text-decoration: none;
@@ -143,17 +223,15 @@ const Header = styled.header`
   .bottom-nav {
     justify-content: space-between;
     .input {
-      margin-right: 8rem;
-
       .input-group {
         input::placeholder {
           font-size: 9px;
         }
         .first {
           border: none;
+          background-color: white;
           span,
           .btn {
-            padding: 0px 0px;
             font-size: 14px !important;
             font-weight: 500 !important;
           }

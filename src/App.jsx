@@ -5,6 +5,7 @@ import HomePage from "./pages";
 import AboutPage from "./pages/about";
 import "./styles/index.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
+import "bootstrap/dist/js/bootstrap";
 import HeroComp from "./components/HeroComp";
 
 const App = () => {

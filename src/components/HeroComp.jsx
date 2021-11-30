@@ -4,9 +4,9 @@ import styled from "styled-components";
 const HeroComp = () => {
   return (
     <Wrapper>
-      <div className="container">
-        <div className="hero bg-primary flex-grow-1">
-          <div className="write-up d-flex ">
+      <div className=" container-fluid bg-primary">
+        <div className="hero container d-flex flex-lg-row justify-content-lg-center flex-column">
+          <div className="write-up ">
             <button className="btn-dark">Trending Discounts</button>
             <h3>Try Next levels</h3>
             <h1>Smart gadgets </h1>
@@ -15,9 +15,10 @@ const HeroComp = () => {
               officially making effectively
             </p>
             <button className="btn-secondary btn-lg text-light">Shop Now</button>
-            <div className="head">
-              <img src="images/hero-1.png" alt="" />
-            </div>
+          </div>
+          <div className=" d-md-block d-none head">
+            <img src="images/Rectangle6.png" className="img-fluid head" alt="" />
+            <img src="images/rectangle7.png" className="img-fluid heading" alt="" />
           </div>
         </div>
       </div>
@@ -29,12 +30,20 @@ export default HeroComp;
 
 const Wrapper = styled.div`
   .hero {
-    background-repeat: no-repeat;
+    position: relative;
     .write-up {
-      padding: 2rem;
+      margin-top: 7rem;
     }
     .head {
-      padding-right: 0.6rem;
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+    .heading {
+      position: absolute;
+      top: 1rem;
+      /* left: 12rem; */
+      right: 0;
     }
   }
 `;
