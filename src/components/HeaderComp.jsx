@@ -5,7 +5,7 @@ import styled from "styled-components";
 const HeaderComp = () => {
   return (
     <Header>
-      <div className="top-nav bg-primary">
+      <nav className="top-nav bg-primary">
         <div className=" container d-flex align-items-lg-center justify-content-md-between">
           <div className="left d-flex align-items-md-center flex-column flex-md-row">
             <div class="dropdown">
@@ -82,14 +82,14 @@ const HeaderComp = () => {
             </a>
           </div>
         </div>
-      </div>
+      </nav>
       <div className="bottom-nav">
-        <div className="container d-flex">
-          <div className=" d-flex">
-            <img src="images/Ububa logo for ui-02 1 (1).svg" alt="" />
+        <nav className="navbar container">
+          <div className="d-flex">
+            <img src="images/Ububa logo for ui-02 1 (1).svg" className="" alt="" />
             <img src="images/Group (1).svg" alt="" />
           </div>
-          <div className="mx-3 pt-4">
+          <div className="pt-2">
             <div className="container d-flex">
               <div className="dropdown">
                 <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -113,7 +113,7 @@ const HeaderComp = () => {
                   </li>
                 </ul>
               </div>
-              <div className="input-group mx-5 mt-2">
+              <div className="input-group">
                 <input type="text" className=" form-control" placeholder="search products, categories" />
                 <div className="input-group-text bg-secondary">
                   <span className="">
@@ -141,8 +141,8 @@ const HeaderComp = () => {
             </div>
           </div> */}
 
-          <div className="nav-content pt-4 ">
-            <ul className="nav-item d-flex ">
+          <div className="nav-content ">
+            <ul className="nav-item d-flex">
               <li>
                 <a href="/" className="nav-link">
                   <i className="far fa-heart fs-21"></i>
@@ -150,23 +150,23 @@ const HeaderComp = () => {
               </li>
               <li>
                 <a href="/" className="nav-link">
-                  <i className="fas fa-shopping-bag fs-21"></i>
+                  <i className="fas fa-shopping-bag fs-21 me-4"></i>
                 </a>
               </li>
               <li>
-                <a href="/" className="nav-link text-danger mx-3 ">
+                <a href="/" className="nav-link text-danger ">
                   <i className="far fa-question-circle question fs-21"></i>
                 </a>
               </li>
               <li>
-                <a href="/" className="nav-link ">
+                <a href="/" className="nav-link">
                   {" "}
                   <i className="far fa-user-circle profile fs-21"></i>
                 </a>
               </li>
             </ul>
           </div>
-        </div>
+        </nav>
       </div>
 
       {/* <div className="input-group-text ">

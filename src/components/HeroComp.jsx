@@ -16,9 +16,9 @@ const HeroComp = () => {
             </p>
             <button className="btn-secondary btn-lg text-light">Shop Now</button>
           </div>
-          <div className=" d-md-block d-none head">
+          <div className=" d-md-block d-none">
             <img src="images/Rectangle6.png" className="img-fluid head" alt="" />
-            <img src="images/rectangle7.png" className="img-fluid heading" alt="" />
+            {/* <img src="images/rectangle7.png" className="img-fluid heading" alt="" /> */}
           </div>
         </div>
       </div>
@@ -30,7 +30,6 @@ export default HeroComp;
 
 const Wrapper = styled.div`
   .hero {
-    position: relative;
     .write-up {
       margin-top: 7rem;
     }
@@ -38,11 +37,12 @@ const Wrapper = styled.div`
       position: relative;
       top: 0;
       right: 0;
+      padding-right: 0.7rem;
     }
     .heading {
       position: absolute;
       top: 1rem;
-      /* left: 12rem; */
+      /* left: 0rem; */
       right: 0;
     }
   }
