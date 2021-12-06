@@ -7,18 +7,21 @@ const HeroComp = () => {
       <div className=" container-fluid bg-primary">
         <div className="hero container d-flex flex-lg-row justify-content-lg-center flex-column">
           <div className="write-up ">
-            <button className="btn-dark">Trending Discounts</button>
+            <button className="btn-dark btn-lg">
+              <a href="/">Trending Discounts </a>
+            </button>
             <h3>Try Next levels</h3>
             <h1>Smart gadgets </h1>
             <p>
               he Union Jack, or Union Flag, is the de facto national flag of <br /> the United Kingdom. Though no law has been passed <br />
               officially making effectively
             </p>
-            <button className="btn-secondary btn-lg text-light">Shop Now</button>
+            <button className="btn-secondary btn-lg text-light">
+              <a href="/"> Shop Now </a>
+            </button>
           </div>
-          <div className=" d-md-block d-none">
-            <img src="images/Rectangle6.png" className="img-fluid head" alt="" />
-            {/* <img src="images/rectangle7.png" className="img-fluid heading" alt="" /> */}
+          <div className=" d-md-block d-none images1">
+            <img src="images/Group 777 (1).png" className="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -30,20 +33,19 @@ export default HeroComp;
 
 const Wrapper = styled.div`
   .hero {
+    position: relative;
+
     .write-up {
-      margin-top: 7rem;
+      margin: 7rem 1rem;
+      @media screen and (min-width: 378px) and (max-width: 992px) {
+      }
     }
-    .head {
-      position: relative;
-      top: 0;
-      right: 0;
-      padding-right: 0.7rem;
-    }
-    .heading {
-      position: absolute;
-      top: 1rem;
-      /* left: 0rem; */
-      right: 0;
+    .images1 {
+      height: 53rem;
+      margin-left: 9rem;
+      @media screen and (min-width: 378px) and (max-width: 992px) {
+        margin-left: 0.3rem;
+      }
     }
   }
 `;
