@@ -7,6 +7,7 @@ import "./styles/index.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "bootstrap/dist/js/bootstrap";
 import HeroComp from "./components/HeroComp";
+import TrendingComp from "./components/TrendingComp";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <div>
         <HeaderComp />
         <HeroComp />
+        <TrendingComp />
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/about" component={AboutPage} />

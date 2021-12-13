@@ -145,23 +145,23 @@ const HeaderComp = () => {
             <ul className="nav-item d-flex">
               <li>
                 <a href="/" className="nav-link">
-                  <i className="far fa-heart fs-21"></i>
+                  <i className="far fa-heart fs-27"></i>
                 </a>
               </li>
               <li>
                 <a href="/" className="nav-link">
-                  <i className="fas fa-shopping-bag fs-21 me-4"></i>
+                  <i className="fas fa-shopping-bag me-4 fs-27"></i>
                 </a>
               </li>
               <li>
                 <a href="/" className="nav-link text-danger ">
-                  <i className="far fa-question-circle question fs-21"></i>
+                  <i className="far fa-question-circle question fs-27"></i>
                 </a>
               </li>
               <li>
                 <a href="/" className="nav-link">
                   {" "}
-                  <i className="far fa-user-circle profile fs-21"></i>
+                  <i className="far fa-user-circle profile fs-27 "></i>
                 </a>
               </li>
             </ul>

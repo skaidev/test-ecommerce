@@ -4,7 +4,7 @@ const ContentComp = () => {
   return (
     <Wrapper>
       <div className="">
-        <div className=" container bg-light header">
+        <div className=" container bg-light header d-lg-grid">
           {card.map((card) => (
             <div className="d-flex para" key={card.id}>
               <div className=" wrap">
@@ -29,7 +29,7 @@ const card = [
     id: 1,
     title: "100% warranty",
     body: "You have 30 days to return",
-    img: "images/Group (1).svg",
+    img: "images/guarantee 1.svg",
   },
   {
     id: 2,
@@ -53,16 +53,18 @@ const card = [
 
 export const Wrapper = styled.div`
   .header {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
 
     .wrap {
       margin-top: 0.2rem;
     }
     .para {
-      border: 3px solid white;
-      padding: 2px;
-      box-shadow: 2px, 5px;
+      border: 5px solid white;
+      padding: 10px;
+      box-shadow: 7px 10px 5px 0px rgba(230, 218, 218, 0.75);
+      gap: 1rem;
+      margin-bottom: 2rem;
     }
   }
 `;
