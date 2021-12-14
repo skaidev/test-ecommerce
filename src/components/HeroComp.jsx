@@ -9,7 +9,7 @@ const HeroComp = () => {
         <div className="hero">
           <div className="top">
             <div>
-              <button className="btn-dark btn-lg">
+              <button className="btn-dark btn-lg mb-3">
                 <a href="/">Trending Discounts </a>
               </button>
             </div>
@@ -19,12 +19,12 @@ const HeroComp = () => {
               <span className="fw-bold fs-41">Smart gadgets</span>
             </h2>
 
-            <p className="fs-14 text-dark">
+            <p className="fs-14 text-dark pt-4">
               he Union Jack, or Union Flag, is the de facto national flag <br />
               of the United Kingdom. Though no law has been passed <br />
               officially making effectively
             </p>
-            <button className="btn-secondary btn-lg text-light one">
+            <button className="btn-secondary btn-lg text-light one mt-4">
               <a href="/"> Shop Now </a>
             </button>
           </div>
@@ -58,6 +58,7 @@ const Wrapper = styled.div`
     }
     .one {
       padding: 10px 32px;
+      border: 2px solid white;
     }
   }
 `;

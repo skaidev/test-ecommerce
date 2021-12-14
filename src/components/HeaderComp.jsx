@@ -26,7 +26,7 @@ const HeaderComp = () => {
                 </li>
                 <li>
                   <a class="dropdown-item" href="/">
-                    Euro
+                    french
                   </a>
                 </li>
               </ul>
@@ -56,21 +56,21 @@ const HeaderComp = () => {
             </div>
             <div className="icons d-flex">
               <a href="/">
-                <i class="fab fa-facebook text-info"></i>
+                <i class="fab fa-facebook text-info fs-14"></i>
               </a>
               <a href="/">
-                <i className="fab fa-twitter text-info"></i>
+                <i className="fab fa-twitter text-info fs-14"></i>
               </a>
               <a href="/">
-                <i className="fab fa-linkedin-in text-info"></i>
+                <i className="fab fa-linkedin-in text-info fs-14"></i>
               </a>
               <a href="/">
-                <i className="fab fa-instagram text-info"></i>
+                <i className="fab fa-instagram text-info fs-14"></i>
               </a>
             </div>
             <li className="p-0 m-0 d-md-flex d-none align-items-center phone ">
               <i className="fas fa-phone-alt me-3 text-info"></i>
-              <p className="gold fw-regular ">+234 901 262 4162</p>
+              <p className="gold fw-regular2">+234 901 262 4162</p>
             </li>
           </div>
           <div className="p-0 d-flex m-0">
@@ -124,23 +124,6 @@ const HeaderComp = () => {
             </div>
           </div>
 
-          {/* <div className="inputGroup">
-            <div className="inputGroup1"></div>
-
-            <label For="input">
-              {" "}
-              <span className="">
-                All Categories <i className="fas fa-chevron-down text-secondary"></i>
-              </span>
-            </label>
-            <input type="text" className="inputGroup" placeholder="search products, categories" />
-            <div className="input">
-              <span className=" text=light">
-                <i className="fas fa-search text-light"></i>
-              </span>
-            </div>
-          </div> */}
-
           <div className="nav-content ">
             <ul className="nav-item d-flex">
               <li>
@@ -168,22 +151,6 @@ const HeaderComp = () => {
           </div>
         </nav>
       </div>
-
-      {/* <div className="input-group-text ">
-                <span className="">
-                  All Categories <i className="fas fa-chevron-down text-secondary"></i>
-                </span>
-              </div> */}
-      {/* <nav>
-        <ul>
-          <li>
-            <Link to="/">home</Link>
-          </li>
-          <li>
-            <Link to="/about">about</Link>
-          </li>
-        </ul>
-      </nav> */}
     </Header>
   );
 };
